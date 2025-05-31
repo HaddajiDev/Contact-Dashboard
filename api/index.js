@@ -7,7 +7,9 @@ const connect = require('./db_connect');
 
 connect();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: ["http://localhost:3000", "https://haddaji.vercel.app", "https://contact-dashboard-front.vercel.app"]
+}));
 
 app.use('/api', require('./routes/message'));
 
