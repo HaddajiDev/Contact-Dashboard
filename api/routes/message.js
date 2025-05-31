@@ -13,7 +13,7 @@ const limiter = rateLimit({
 });
 
 
-router.post("/new", limiter, async(req, res) => {
+router.post("/new", async(req, res) => {
     const {name , email, message, priority} = req.body;
     try {
 
