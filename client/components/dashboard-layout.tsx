@@ -360,7 +360,7 @@ export function DashboardLayout() {
                 )}
               </div>
 
-              <div className="flex-1 flex items-center gap-2 max-w-md ml-auto">
+              <div className="flex-1 flex items-center justify-end gap-2 w-[100%] ml-auto">
                 <DashboardHeader
                   searchQuery={searchQuery}
                   onSearchChange={setSearchQuery}
